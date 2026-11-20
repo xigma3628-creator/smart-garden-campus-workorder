@@ -14,7 +14,7 @@
 
 | 部分 | 技术栈 |
 | --- | --- |
-| 前端大屏 | Vue3 + Vite + Cesium + Element Plus（hash 路由，离线卫星底图） |
+| 前端大屏 | Vue3 + Vite + Cesium + Element Plus（hash 路由，高德在线底图瓦片代理） |
 | 后端 | Node.js Express 5 + 内嵌 Aedes MQTT(1883) + ws + SQLite（REST :3100） |
 | 推理服务 | FastAPI + YOLOv8n（:3101，不可用时自动降级为模拟） |
 | 设备模拟器 | 18 台设备 2 秒级 MQTT 上报（土壤/气象/水质/灌溉/监控/虫情） |

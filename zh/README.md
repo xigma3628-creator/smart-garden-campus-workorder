@@ -5,7 +5,7 @@
 - **前端大屏**：Vue3 + Cesium（`digital-farmland`）
 - **后端服务**：Node.js ESM + Express + 内嵌 Aedes MQTT + SQLite（`server`）
 - **AI 推理**：Python FastAPI + YOLOv8/ONNX（`inference-service`）
-- **桌面版**：Electron 打包，开箱即用（含离线卫星底图）
+- **桌面版**：Electron 打包，开箱即用（含完整本地服务与底图瓦片代理）
 
 ## 模块导航
 

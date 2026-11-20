@@ -5,7 +5,7 @@ Campus digital twin for a university campus — architecture and module knowledg
 - **Big-screen frontend**: Vue3 + Cesium (`digital-farmland`)
 - **Backend service**: Node.js ESM + Express + embedded Aedes MQTT + SQLite (`server`)
 - **AI inference**: Python FastAPI + YOLOv8/ONNX (`inference-service`)
-- **Desktop edition**: Electron-packaged, works out of the box (offline satellite basemap included)
+- **Desktop edition**: Electron-packaged, works out of the box (bundled local services and a basemap tile proxy)
 
 ## Module navigation
 

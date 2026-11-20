@@ -1,1 +1,1 @@
-Using the master plan as the guiding document, this root ties together the backend, the inference service, and the desktop deliverables, and aggregates the satellite basemap generation scripts, MCP test scripts, and the per-phase design documents.
+Using the master plan as the guiding document, this root ties together the backend, the inference service, and the desktop deliverables, and aggregates the basemap generation scripts, MCP test scripts, and the per-phase design documents.

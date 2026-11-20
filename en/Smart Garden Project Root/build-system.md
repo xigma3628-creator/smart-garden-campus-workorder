@@ -23,7 +23,7 @@ The repository uses a **multi-language, unorchestrated** lightweight build appro
 - **Decentralized versioning**: `server/package.json` is fixed at version `0.1.0`; the desktop installer version `1.4.0` is controlled by the external Electron project. The two version tracks are not synchronized — they are independent release channels.
 - **Build is run**: the backend has no build phase; `npm start` executes the source directly. The inference service likewise has no compilation step.
 - **Desktop packaging is external**: the Electron shell project is not in this repository; the install instructions explicitly point to the local path `sg-desktop`. This repository therefore only produces source code and the final binary deliverables.
-- **Offline-first**: the install instructions emphasize "built-in offline satellite imagery of campus + farmland"; the desktop edition bundles SQLite, MQTT, and REST services and works out of the box with no extra database or message middleware to install.
+- **Out-of-the-box**: the desktop edition bundles SQLite, MQTT, and REST services plus a basemap tile proxy, and needs no extra database or message middleware.
 
 ## 4. Conventions and constraints
 
