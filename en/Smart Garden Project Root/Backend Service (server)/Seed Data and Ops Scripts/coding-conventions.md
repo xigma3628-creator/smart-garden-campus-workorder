@@ -1,0 +1,4 @@
+- Scripts derive __dirname via path.dirname(fileURLToPath(import.meta.url)), then resolve cross-repo resources (such as ../../参考项目/...) from relative paths.
+- External behavior is always exposed through process.env (KB_SEED_FILE, API_BASE, DRONE_BASE/USER/PASS); default values serve only as a fallback.
+- HTTP calls are wrapped in a unified readJson helper that throws error messages containing status based on res.ok and data.ok.
+- Scripts that must be re-runnable use fixed-seed random numbers (mulberry32) + INSERT OR IGNORE to achieve idempotent seeding.

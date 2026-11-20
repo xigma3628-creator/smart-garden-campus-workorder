@@ -1,0 +1,2 @@
+- Each dedicated design document uses the three-part structure "current-state inventory → design → acceptance metrics", which makes incremental acceptance of the existing server/inference_service/delivery_artifacts submodules straightforward.
+- External interface changes follow the principle "keep the result structure unchanged, replace only the internal implementation" — e.g. the cameraId/category/confidence/bbox/ts field contract that the AI inference service exposes to server.

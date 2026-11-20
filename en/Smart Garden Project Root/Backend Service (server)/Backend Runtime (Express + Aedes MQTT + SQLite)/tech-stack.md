@@ -1,0 +1,1 @@
+Node.js ESM + Express 4; the embedded MQTT broker uses `aedes`, the MQTT client uses `mqtt`; real-time push uses `ws`; the database is Node's native `node:sqlite` (`DatabaseSync`, WAL mode); no third-party file-upload library — a hand-written `multipart/form-data` parser.

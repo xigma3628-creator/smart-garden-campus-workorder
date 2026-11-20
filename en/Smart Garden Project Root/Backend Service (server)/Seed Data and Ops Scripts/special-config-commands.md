@@ -1,0 +1,1 @@
+Must be run from the server directory: `node scripts/import-kb.mjs` (optional KB_SEED_FILE), `node scripts/seed-trees.mjs`, `node scripts/simulate-drone.mjs [--frames N] [--base URL]` (depends on external ffmpeg and digital-farmland/public/static/35.mp4), plus `node scripts/kb-eval/eval.mjs` and `selfcheck.mjs` (the server must be started first).

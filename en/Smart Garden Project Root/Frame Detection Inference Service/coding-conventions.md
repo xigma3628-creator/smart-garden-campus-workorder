@@ -1,0 +1,4 @@
+- Model loading runs in a daemon background thread; on failure it only records `state='error'` without blocking service startup, and `/health` exposes the status so callers can degrade.
+- All I/O and model calls (ultralytics predict, onnx session.run) are serialized with a `threading.Lock` to prevent concurrent requests from producing garbled outputs.
+- The weight path prefers the `MODEL_PATH` environment variable; when it is absent, the file name is looked up in the `ASSET_URLS` dictionary and downloaded as a fallback from ultralytics assets or a gh-proxy mirror.
+- Detection results are uniformly serialized as `{label, confidence, bbox}` triples, where `bbox` is always in pixels as `[x, y, w, h]`, sorted by confidence in descending order.

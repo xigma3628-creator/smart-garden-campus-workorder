@@ -1,0 +1,1 @@
+The inference service address is controlled by the environment variable `INFERENCE_URL`; `CLASSES_MAP_PATH` can specify the class-mapping file path; setting `AI_MODE=mock` forces the mock inference path, which is convenient for offline testing.

@@ -1,0 +1,1 @@
+FastAPI + uvicorn as the HTTP framework; the default inference backend is ultralytics YOLOv8n-oiv7 (Open Images V7 weights, 601 classes); an optional onnxruntime CPUExecutionProvider backend; OpenCV/Numpy for image encoding/decoding and letterbox preprocessing.

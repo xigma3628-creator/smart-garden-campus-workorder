@@ -1,0 +1,6 @@
+This directory is a flat collection of ESM test scripts; each `.mjs` file corresponds to one independent acceptance scenario:
+- `acceptance.mjs`: general phase-2 acceptance; publishes device state over MQTT and polls `/api/alarms` to verify alarm trigger/recovery and end-to-end latency.
+- `drone-acceptance.mjs`: phase-10 drone mission acceptance; reads/writes `garden.db` directly via `node:sqlite`, calls the `/api/drone/*` endpoints, and cooperates with the `simulate-drone` subprocess; supports three modes: simulate-check / offline-up / offline-recover.
+- `irrigation-loop.mjs`, `phase7-acceptance.mjs`, `phase9-acceptance.mjs`, `phase11-e2e.mjs`, `phase11-uploads-check.mjs`: dedicated acceptance scripts split by iteration phase.
+- `ws-recover.mjs`: WebSocket disconnect/reconnect timing measurement script; controls the backend lifecycle via `netstat` + `child_process`.
+All scripts share the same dependency direction: as external clients they connect to an already-running backend via the environment variables `API_BASE` (default `http://localhost:3100`), `MQTT_URL`, `WS_URL`, and never start the process under test themselves; test data is persisted under `server/data/`, and test artifacts are read and asserted directly by the scripts.

@@ -1,0 +1,1 @@
+Express + Aedes (MQTT broker) + better-sqlite3 + ws (WebSocket), organized as Node ESM modules.

@@ -1,0 +1,1 @@
+The server starts via `npm start`; `npm run seed` loads the tree seed data; `node scripts/import-kb.mjs` imports the knowledge base; `node scripts/simulate-drone.mjs` drives the drone patrol simulation.

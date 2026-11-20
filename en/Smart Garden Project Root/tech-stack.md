@@ -1,0 +1,1 @@
+The root-level documents and scripts span Node.js (MCP test scripts), Python (satellite basemap stitching / grid overlay), Cesium+Vue3 (big screen), Express (backend), FastAPI (inference service), and NSIS (desktop packaging).

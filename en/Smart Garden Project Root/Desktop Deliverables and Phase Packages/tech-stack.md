@@ -1,0 +1,1 @@
+Electron shell + Vue3 + Cesium frontend; Express + aedes MQTT + ws + node:sqlite backend; the installer is a Windows x64 executable with no code signing, so it must be verified via its SHA256 checksum.

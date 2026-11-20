@@ -1,0 +1,1 @@
+With Express as the entry point, this service aggregates the drone patrol, AI recognition and knowledge base, MQTT device simulation, and irrigation/alarm submodules, and exposes a unified API backed by SQLite and an in-memory time-series state catalog.

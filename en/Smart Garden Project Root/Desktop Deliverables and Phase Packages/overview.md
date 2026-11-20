@@ -1,0 +1,1 @@
+Aggregates the desktop installer's installation instructions and SHA256 checksums, along with the phased delivery documents for phases 6 through 11, each organized as a task package / acceptance package / prompt trio.

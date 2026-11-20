@@ -1,0 +1,1 @@
+On first startup, the installer automatically initializes the device catalog, users, knowledge base seed data, and the SQLite database; the embedded services listen on REST :3100, WebSocket, and MQTT :1883; runtime data lives in `%APPDATA%\智慧园林监测系统\data`; to repackage, modify the version number in the standalone `sg-desktop` project and then run `npm run dist`.

@@ -1,0 +1,4 @@
+- All persistence access goes uniformly through `db.prepare(...).run/all/get` exposed by `./db.js`; DDL bootstraps tables at module top level via `db.exec`.
+- Exported functions follow a pure-function style: take input parameters, return data or a Promise; errors are expressed by throwing or returning `{ ok:false, error }`, avoiding implicit side effects.
+- Before database writes, string fields are cleaned with `String(x ?? '').trim()`, and required fields (id/name/category) are validated for presence and enum membership before errors are thrown.
+- Configurable external resources (inference URL, classes map, FTS5 availability) degrade gracefully via `process.env` and try/catch environment probing.

@@ -1,0 +1,5 @@
+- Each test entry declares its purpose and usage in a comment line, and resolves external dependency addresses via `process.env.X || 'default'`.
+- Test cases follow the fixed template "define record(name, pass, detail) → perform action → await waitFor(fn, timeout) → record the result".
+- HTTP interaction is based on native `fetch`; authentication is injected via the `Authorization: Bearer <token>` header; JSON responses are parsed defensively with `.json().catch(() => ({}))`.
+- Waiting for async readiness is uniformly wrapped in the `waitFor` polling function, retrying at `sleep(ms)` intervals until timeout, returning `{ ok, elapsed }`.
+- WebSocket reconnect logic uses exponential backoff (initial 500ms, doubling up to a 2000ms cap), maintaining reconnect counts and health-check timestamps in onopen/onclose.

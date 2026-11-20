@@ -1,0 +1,4 @@
+- Business routers live as standalone ES Module files under `src/routers/` and are centrally registered onto the Express app by `routes.js`
+- Device and drone state is written first to the in-memory `state.js` catalog, then persisted asynchronously to SQLite via `db.js`
+- External device interaction goes uniformly through MQTT topic publish/subscribe; the simulator and test scripts reuse the same topic naming convention
+- AI inference results are written back to the database via callback, avoiding synchronous blocking of the HTTP request path

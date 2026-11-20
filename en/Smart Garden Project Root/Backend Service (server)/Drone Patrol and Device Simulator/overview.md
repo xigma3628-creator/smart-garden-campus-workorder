@@ -1,0 +1,1 @@
+Implements CRUD for drone patrol missions, frame upload, and AI inference backfill, and provides an MQTT device-state simulation script that drives the embedded IoT data flow.

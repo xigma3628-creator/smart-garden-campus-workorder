@@ -1,0 +1,1 @@
+A collection of Node.js acceptance/end-to-end test scripts for the backend service, driving it over HTTP, MQTT, and WebSocket to integration-verify scenarios such as alarms, drone missions, and irrigation loops.

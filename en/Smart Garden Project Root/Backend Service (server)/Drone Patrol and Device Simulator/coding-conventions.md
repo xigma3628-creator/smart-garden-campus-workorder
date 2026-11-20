@@ -1,0 +1,4 @@
+- Data-layer functions return two-state objects `{error}` or `{values}`, so the router can uniformly handle 400 validation branches.
+- Timestamp inputs are normalized to ISO strings via `normalizeTs` before persistence, accepting epoch seconds/milliseconds and ISO — three formats.
+- External HTTP calls use AbortSignal.timeout for timeouts; the catch block logs a warning but keeps the frame in pending state for later compensation retries.
+- Sensor value updates use walk(v, step, min, max) random walks constrained to physically plausible ranges, with output fields dispatched by device type.

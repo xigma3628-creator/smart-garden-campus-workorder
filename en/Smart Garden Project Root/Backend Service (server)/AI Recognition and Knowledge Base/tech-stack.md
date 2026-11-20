@@ -1,0 +1,1 @@
+Node.js ESM + Express Router; SQLite (native sqlite3 bindings, tables created via `db.exec`); optional SQLite FTS5 extension for trigram Chinese search; the inference backend talks to the external inference-service over HTTP multipart/form-data.

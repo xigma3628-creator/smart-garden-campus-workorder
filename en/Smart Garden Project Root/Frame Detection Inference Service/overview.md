@@ -1,0 +1,1 @@
+A standalone Python service based on FastAPI that receives single-frame images and returns object detection results via YOLOv8 (or ONNX), giving the backend a degradable, swappable inference capability.

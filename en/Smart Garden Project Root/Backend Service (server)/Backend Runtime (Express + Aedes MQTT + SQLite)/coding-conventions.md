@@ -1,0 +1,6 @@
+- Express routers are returned as `Router` instances by factory functions (such as `createRoutes`, `createUploadsRouter`, `createTreeAssetsRouter`) and centrally mounted by `index.js` via `app.use`, enabling per-module loading and test isolation.
+- External subsystems (MQTT publish, WebSocket client count, AI engine, irrigation engine) are injected via setter callbacks (`setPublishControl` / `setClientCounter` / `setAi` / `setIrrigation`), avoiding direct inter-module coupling.
+- REST responses uniformly return the `{ ok, ...payload }` structure; error branches return `{ ok: false, error: '...' }`; the health check additionally includes online device count, WS client count, and DB row count.
+- Sensitive or write-operation routes are protected by the `requireAuth()` auth middleware, while read endpoints remain publicly accessible (e.g. knowledge base, tree archive lists).
+- File upload uses a "declared Content-Type + magic-number double validation" strategy (jpeg/png/webp), and applies `path.normalize` + root-prefix checks before path reads to prevent `../` traversal.
+- Device metadata is initialized from `devices.json` into the in-memory `Map`, and dynamically added/edited/removed at runtime via `registerDevice` / `updateDeviceMeta` / `unregisterDevice`, ensuring the device catalog and the MQTT ingestion logic share the same source.

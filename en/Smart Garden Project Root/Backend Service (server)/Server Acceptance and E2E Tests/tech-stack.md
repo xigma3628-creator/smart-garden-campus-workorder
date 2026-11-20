@@ -1,0 +1,1 @@
+Node.js ESM (`import.meta.url`), built-in `fetch`/`WebSocket`/`child_process`/`node:sqlite` modules, plus the third-party `mqtt` client for MQTT message publishing; when running on Windows, port-occupancy probing relies on `netstat -ano | findstr`.

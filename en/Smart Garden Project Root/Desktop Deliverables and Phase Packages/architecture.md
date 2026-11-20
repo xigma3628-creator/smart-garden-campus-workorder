@@ -1,0 +1,4 @@
+The module consists of two parallel directories:
+- `智慧园林桌面版-交付/`: an index of installation artifacts for end users, containing `安装说明.txt` (covering installation, usage, data locations, uninstallation, and the source-project repackaging path) and `校验值-SHA256.txt` (used to verify the integrity of the unsigned installer).
+- `阶段包/`: a collection of delivery documents divided by "phase", one subdirectory per phase, uniformly using the trio file naming `<期数>-任务包.md` / `<期数>-验收包.md` / `<期数>-提示词.md`; the root `README.md` serves as the master index, defining each phase's theme, priority, usage workflow, and rules for drawing on the reference project.
+The dependency direction is one-way outward: this module carries only descriptive documents, introduces no code or build scripts, and all implementation details point to source projects outside the repo (`digital-farmland`, `server`, `sg-desktop`).

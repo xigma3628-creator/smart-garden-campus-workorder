@@ -1,0 +1,1 @@
+The Express application bootstrap and core runtime of the Smart Garden project, integrating the embedded MQTT broker, WebSocket broadcast, in-memory device state catalog, SQLite time-series storage, and the alarm/irrigation/AI/upload submodules.

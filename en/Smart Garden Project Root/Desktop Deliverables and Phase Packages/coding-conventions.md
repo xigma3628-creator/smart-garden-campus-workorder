@@ -1,0 +1,3 @@
+- Each phase's delivery documents uniformly use the trio naming `<期数>-任务包.md` / `<期数>-验收包.md` / `<期数>-提示词.md`, where the prompt can be sent as-is to a coding agent.
+- Acceptance packages are organized in a four-part structure of "falsifiable criteria + test steps + test-data requirements + record sheet"; tasks that do not pass must not be merged.
+- Cross-phase constraints are declared in the master index: accepted features must not regress; each phase is committed independently, and commit messages use the corresponding phase number as a prefix (e.g. `六期:` / `七期:`).

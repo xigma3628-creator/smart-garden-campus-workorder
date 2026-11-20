@@ -1,0 +1,1 @@
+Simulator run command: `node server/simulator/simulate.js`; a local MQTT broker must be running first (default `mqtt://127.0.0.1:1883`). Setting `SIM_FAULT=1` forces soil-01 moisture below the threshold to demonstrate the drought alarm pipeline.

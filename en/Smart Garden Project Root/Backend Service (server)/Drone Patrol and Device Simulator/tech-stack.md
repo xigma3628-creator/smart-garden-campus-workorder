@@ -1,0 +1,1 @@
+Express Router + node-fetch (Fetch API) calling the external inference service; embedded SQLite storage; mqtt client simulating IoT devices; image files persisted to `server/data/drone_frames/<mission_no>/seq_<n>.jpg`.

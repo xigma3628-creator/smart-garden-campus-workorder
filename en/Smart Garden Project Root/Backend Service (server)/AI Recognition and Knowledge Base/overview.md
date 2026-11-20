@@ -1,0 +1,1 @@
+Provides pest/disease and growth-vigor inference on camera frames (with both a real model and mock fallback), plus CRUD, search, and LLM Q&A over three categories of knowledge entries: trees, pests, and maintenance standards.
